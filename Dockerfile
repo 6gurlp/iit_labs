@@ -1,4 +1,2 @@
-FROM ubuntu:latest
-LABEL authors="lox"
-
-ENTRYPOINT ["top", "-b"]
+FROM nginx:latest
+COPY . /usr/share/nginx/html
